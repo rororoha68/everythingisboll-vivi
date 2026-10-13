@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>이동 중...</title>
+<style>
+  :root { --bg: #f6f7fb; --text: #1d2130; --sub: #6a7086; --accent: #3b6cff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12141b; --text: #eef0f7; --sub: #9aa0b8; }
+  }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text); text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px;
+  }
+  p { margin: 0 0 12px; color: var(--sub); }
+  a { color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+  <p>특전 페이지로 이동 중이에요 💙</p>
+  <!-- ✏️ 이 주소 한 곳만 수정하세요: /특전저장소명/특전폴더명/ -->
+  <a id="go" href="https://rororoha68.github.io/ef1q1gsd/">자동으로 안 넘어가면 여기를 눌러주세요</a>
+
+  <script>
+    // 위 링크의 주소로 바로 이동 (뒤로가기 시 이 페이지로 돌아오지 않게 replace 사용)
+    location.replace(document.getElementById('go').href);
+  </script>
+</body>
+</html>
